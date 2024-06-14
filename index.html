@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Boostrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ecommerce Food website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow py-3 sticky-top"
+    >
+      <div class="container">
+        <!-- Web logo -->
+        <a class="navbar-brand" href="#">Mott Burger</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <span><i class="bi bi-bag-check" id="ShopIcon"></i></span>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+
+    <section class="main py-5 text-white">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-6 py-5">
+            <div class="filter"></div>
+            <p class="text m-0">Burger products</p>
+            <h1 class="pb-5">Mott Burger</h1>
+            <p class="text">
+              Welcome to Mott Burger, your premier destination for delicious and
+              satisfying burgers! Established in the heart of the city, we take
+              great pride in serving up mouthwatering creations made with the
+              freshest ingredients.
+            </p>
+            <button class="mbtn1 mt-4 text-white">
+              <a href="#about">Read More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 px-5">
+            <img class="img-fluid" src="./imgs2/About_BG.jpg" alt="" />
+          </div>
+          <div class="col-lg-5 py-5 px-5 text-white" id="about-text">
+            <h1 class="pb-4">About us</h1>
+            <p class="text">
+              Our menu features a diverse selection of juicy beef patties,
+              perfectly grilled and topped with a variety of tasty toppings.
+            </p>
+            <p class="text">
+              From the classic cheeseburger to our signature Mott Burger, loaded
+              with crispy bacon, sautéed mushrooms, and tangy BBQ sauce, we have
+              something to satisfy every burger craving.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meun -->
+    <section id="menu" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 intro-text">
+            <h1 class="my-5 text-white">Explore Our Menu</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul
+          class="nav nav-pills mb-4 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-burger-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-burger"
+              type="button"
+              role="tab"
+              aria-controls="pills-burger"
+              aria-selected="true"
+            >
+              Burger
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-snacks-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-snacks"
+              type="button"
+              role="tab"
+              aria-controls="pills-snacks"
+              aria-selected="true"
+            >
+              Snacks
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-drinks-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-drinks"
+              type="button"
+              role="tab"
+              aria-controls="pills-drinks"
+              aria-selected="true"
+            >
+              Drinks
+            </button>
+          </li>
+        </ul>
+
+        <!-- Menu List -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Hamburger Items -->
+          <div
+            class="tab-pane fade show active"
+            id="pills-burger"
+            role="tabpanel"
+            aria-labelledby="pills-burger-tab"
+            tabindex="0"
+          >
+            <!--Items list -->
+            <div class="row gy-4 pb-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_1.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Cheese Double Burger</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_2.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4.5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Omelette Burger</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_3.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Spicy Burger</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_4.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Hawaiian Burger</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_5.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Donut Burger</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_6.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Triple Cheese Burger</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_7.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Bamboo Charcoal Burger</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/item_8.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4.5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Hell's Spicy Burger</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Snacks Items -->
+          <div
+            class="tab-pane fade show"
+            id="pills-snacks"
+            role="tabpanel"
+            aria-labelledby="pills-snacks-tab"
+            tabindex="0"
+          >
+            <!-- Items list -->
+            <div class="row pb-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/Snacks_1.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4.5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Fries</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/Snacks_2.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Onion Rings</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/Snacks_3.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4.5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Fried Shrimp</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/Snacks_4.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Sesame Chicken Wings</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Drinks Items -->
+          <div
+            class="tab-pane fade show"
+            id="pills-drinks"
+            role="tabpanel"
+            aria-labelledby="pills-drinks-tab"
+            tabindex="0"
+          >
+            <!-- Items list -->
+            <div class="row pb-4 justify-content-center">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/Drinks_1.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4.5)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">Mango Soda</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img class="img-fluid" src="./imgs2/Drinks_2.jpg" alt="" />
+                  <div class="menu-item-content p-3">
+                    <span>Rated(4)</span
+                    ><span class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i
+                    ></span>
+                    <h5 class="mt-1 mb-2">White Peach Soda</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section class="features text-center pb-5" id="features">
+      <div class="container py-5">
+        <div class="row pb-5">
+          <div class="col-12 intro-text">
+            <h1 class="text-white">Why to choose us?</h1>
+            <p class="text">
+              Whether you're in the mood for a quick lunch, a casual dinner, or
+              a weekend indulgence, Mott Burger is the place to be. Come and
+              discover the deliciousness that awaits you!
+            </p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card py-3 h-100 d-inline-block">
+              <div class="card-body">
+                <span><i class="bi bi-shop-window"></i></span>
+                <h2 class="text-white">Fast Delivery</h2>
+                <p class="text">
+                  When that burger craving hits, the last thing you want to do
+                  is wait. That's why at Mott Burger, we're proud to offer
+                  lightning-fast delivery to get your order to your door in a
+                  flash.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card py-3 h-100 d-inline-block">
+              <div class="card-body">
+                <span><i class="bi bi-flower2"></i></span>
+                <h2 class="text-white">Friendly Staff</h2>
+                <p class="text">
+                  We believe that exceptional service is just as important as
+                  our mouthwatering burgers. That's why our team of dedicated
+                  staff members is committed to providing a warm, welcoming
+                  experience for every customer who walks through our doors.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card py-3 h-100 d-inline-block">
+              <div class="card-body">
+                <span><i class="bi bi-bookmark-star"></i></span>
+                <h2 class="text-white">Highly Rated</h2>
+                <p class="text">
+                  We take great pride in our reputation as one of the top-rated
+                  burger joints in the city. Our commitment to delivering
+                  exceptional quality, flavor, and service has earned us
+                  widespread recognition and acclaim from both our loyal
+                  customers and respected industry experts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <!-- contact -->
+    <section class="contact py-3" id="contact">
+      <div class="container py-1">
+        <div class="row">
+          <div class="col-lg-7 col-md-7">
+            <h1 class="pb-3">Contact us</h1>
+            <p>
+              At Mott Burger, we value your feedback and are here to assist you
+              with any inquiries or comments you may have. Feel free to reach
+              out to us through the following channels:
+            </p>
+            <div class="row py-3">
+              <div class="col-lg-6">
+                <div class="row pt-2">
+                  <div class="col-lg-3 col-2">
+                    <div class="circle">
+                      <span><i class="bi bi-house-fill"></i> </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-sm-8 col-8 pt-2">
+                    <p>PO Box 16-12 Collins Street West Victoria 8007</p>
+                  </div>
+                </div>
+
+                <div class="row pt-2">
+                  <div class="col-lg-3 col-2">
+                    <div class="circle">
+                      <span><i class="bi bi-pencil-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-sm-8 col-8 pt-2">
+                    <p>A1 King Street, Melbourne Victorla 3000</p>
+                  </div>
+                </div>
+
+                <div class="row pt-2">
+                  <div class="col-lg-3 col-2">
+                    <div class="circle">
+                      <span><i class="bi bi-telephone-fill"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-sm-8 col-8 pt-2">
+                    <p>+852 2102 4210</p>
+                  </div>
+                </div>
+
+                <div class="row pt-2">
+                  <div class="col-lg-3 col-2">
+                    <div class="circle">
+                      <span><i class="bi bi-envelope"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-sm-8 col-8 pt-2">
+                    <p>info@mottburger.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Input -->
+              <div class="col-lg-6">
+                <input type="text" placeholder="Name..." />
+                <input type="text" placeholder="Email..." />
+                <input type="text" placeholder="Phone..." />
+                <textarea name="" id="" placeholder="Message..."></textarea>
+                <button class="cbtn mt-3">Send Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
