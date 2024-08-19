@@ -272,3 +272,41 @@ p {
 .cbtn:hover {
   background: rgb(202, 199, 199);
 }
+
+/* 手機RWD */
+@media screen and (max-width: 768px) {
+  section.main h1 {
+    font-size: 3rem;
+  }
+  p.text {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 0.9rem;
+  }
+  /* About */
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  /* Menu */
+  .intro-text {
+    margin-bottom: 0px;
+  }
+  .menu-item h5 {
+    font-size: 0.8rem;
+  }
+
+  span {
+    font-size: 0.7rem;
+  }
+
+  /* Features */
+  section.features h1 {
+    font-size: 2rem;
+  }
+
+  .contact i {
+    font-size: 20px;
+  }
+}
